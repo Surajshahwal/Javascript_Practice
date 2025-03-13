@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jeson</title>
+  </head>
+
+  <body>
+    <div id="my-div"></div>
+    <script>
+      //JSON
+      /* let product = {
+                                                                                                    size: "m",
+                                                                                                    name: "jeans",
+                                                                                                      rating: {
+                                                                                                       star: 4.5,
+                                                                                                       noOfviews: 100,
+                                                                                                      },
+                                                                                                    };
+                                                                                                   console.log(typeof product);
+                                                                                                   console.log(product);
+                                                                                                    let str = JSON.stringify(product);
+                                                                                                   console.log(typeof str);
+                                                                                                   console.log(str);
+                                                                                                   let newProduct = JSON.parse(str);
+                                                                                                   console.log(typeof newProduct);
+                                                                                                   console.log(newProduct);*/
+
+      // storage
+
+      // localStorage.setItem("Name", "kg coding");
+      // localStorage.setItem("price", "10000");
+      // console.log(localStorage.getItem("Name"));
+      // let product = {
+      //   size: "m",
+      //   name: "jeans",
+      //   rating: {
+      //     star: 4.5,
+      //     noOfviews: 100,
+      //   },
+      // };
+      // localStorage.setItem("product", product);
+      // console.log(localStorage.getItem("product"));
+      //    localStorage.setItem("product", JSON.stringify(product));
+      // console.log(localStorage.getItem("product"));
+      // let product2 = JSON.parse(localStorage.getItem("product"));
+      // console.log(product2);
+      // localStorage.removeItem("price");
+      // localStorage.clear();
+      let product = {
+        company: "raimanod",
+        name: "shirt",
+        price: 3400,
+      };
+      let { company, price, name } = product;
+
+      document.querySelector(
+        "#my-div"
+      ).innerText = `company name : ${company} ,  product NAME  :${name},  Price : ${price}`;
+      // console.log(
+      //   `company name : ${company} ,  product NAME  :${name},  Price : ${price}`
+      // );
+    </script>
+  </body>
+</html>

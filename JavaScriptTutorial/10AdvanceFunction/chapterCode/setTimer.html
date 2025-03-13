@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Set Timmer</title>
+  </head>
+  <button id="my-button">click me</button>
+
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+      // for (let i = 0; i < arr.length; i++) {
+      //   console.log(arr[i]);
+      // }
+      // arr.forEach((num) => console.log(num));
+      arr.forEach((num) => {
+        if (num == 5) {
+          return;
+        }
+        console.log(`Visited : ${num}`);
+      });
+
+      //function search(arr, num) {
+      //   for (let i = 0; i < arr.length; i++) {
+      //     if (arr[i] === num) {
+      //       console.log(`element found at :  ${i}`);
+      //       return;
+      //     }
+      //   }
+      //   console.log("element not found ");
+      // }
+
+      //search(arr, 7);
+      // let buttonElement = document.querySelector("#my-button");
+      // let behaviour = (event) => console.log("i am clicked");
+      // buttonElement.addEventListener("click", behaviour);
+      // let printDate = (event) => console.log(new Date());
+      // buttonElement.addEventListener("dblc lick", printDate);
+      // buttonElement.removeEventListener("click", behaviour);
+      /*  // let alarm = () => console.log("uth ja alarm baj rha hai");
+                                                                                                        // setTimeout(alarm, 2000);
+                                                                                                         // console.log("goood morning");
+                                                                                                        let alarm = () => console.log(`Subh ho gyi uth ja ${new Date()}`);
+                                                                                                        // let timmerId = setTimeout(alarm, 1000);
+                                                                                                        // console.log(`Alarm set with timer id ${timmerId}`);
+                                                                                                        // clearTimeout(timmerId);
+
+                                                                                                        let intervalId = setInterval(alarm, 1000);
+                                                                                                        setTimeout(() => clearInterval(intervalId), 5000); */
+    </script>
+  </body>
+</html>

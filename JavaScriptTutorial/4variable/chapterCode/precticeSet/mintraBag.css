@@ -1,0 +1,13 @@
+.add_button {
+    background-color: lightgreen;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.Wishlist {
+    border: 2px solid black;
+    padding: 5px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
